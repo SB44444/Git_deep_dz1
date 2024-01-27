@@ -15,4 +15,5 @@ PS K:\Git\_Git_Pro\Git_deep\Git_deep_dz1> git add *
 PS K:\Git\_Git_Pro\Git_deep\Git_deep_dz1> git commit -m"git init git readme 1"   
 [master (root-commit) 265103f] git init git readme 1  
 1 file changed, 10 insertions(+)  
+
 create mode 100644 README.md  
