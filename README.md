@@ -15,5 +15,48 @@ PS K:\Git\_Git_Pro\Git_deep\Git_deep_dz1> git add *
 PS K:\Git\_Git_Pro\Git_deep\Git_deep_dz1> git commit -m"git init git readme 1"   
 [master (root-commit) 265103f] git init git readme 1  
 1 file changed, 10 insertions(+)  
-
 create mode 100644 README.md  
+
+PS K:\Git\_Git_Pro\Git_deep\Git_deep_dz1> git add *  
+PS K:\Git\_Git_Pro\Git_deep\Git_deep_dz1> git commit -m"git init git readme 1 comand"  
+[master abcf44f] git init git readme 1 comand  
+1 file changed, 9 insertions(+), 1 deletion(-)  
+  
+PS K:\Git\_Git_Pro\Git_deep\Git_deep_dz1> git remote add origin   https://github.com/SB44444/Git_deep_dz1.git  
+PS K:\Git\_Git_Pro\Git_deep\Git_deep_dz1> git branch -M master  
+PS K:\Git\_Git_Pro\Git_deep\Git_deep_dz1> git push -u origin master  
+To https://github.com/SB44444/Git_deep_dz1.git   
+ ! [rejected]        master -> master (fetch first)  
+error: failed to push some refs to 'https://github.com/SB44444/Git_deep_dz1.git'  
+hint: Updates were rejected because the remote contains work that you do not  
+hint: have locally. This is usually caused by another repository pushing to  
+hint: the same ref. If you want to integrate the remote changes, use  
+hint: 'git pull' before pushing again.  
+hint: See the 'Note about fast-forwards' in 'git push --help' for details. 
+
+PS K:\Git\_Git_Pro\Git_deep\Git_deep_dz1> git remote -v
+origin  https://github.com/SB44444/Git_deep_dz1.git (fetch)
+origin  https://github.com/SB44444/Git_deep_dz1.git (push)
+
+PS K:\Git\_Git_Pro\Git_deep\Git_deep_dz1> git remote show origin
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local ref configured for 'git push':
+    master pushes to master (local out of date)
+PS K:\Git\_Git_Pro\Git_deep\Git_deep_dz1> git log origin/master     
+commit 2f414c78193761a02c45f647e9bb56bae2f5fb95 (origin/master)
+Author: SB44444 <115193888+SB44444@users.noreply.github.com>
+Date:   Sat Jan 27 05:51:47 2024 +0300
+
+    Create README.md at github
+PS K:\Git\_Git_Pro\Git_deep\Git_deep_dz1> git merge origin/master --allow-unrelated-histories        
+error: Your local changes to the following files would be overwritten by merge:
+        README.md
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+PS K:\Git\_Git_Pro\Git_deep\Git_deep_dz1> git commit -m"git init git readme 1 comand fix1"
+[master fa2bdc2] git init git readme 1 comand fix1
+ 1 file changed, 1 insertion(+)
+PS K:\Git\_Git_Pro\Git_deep\Git_deep_dz1> 
